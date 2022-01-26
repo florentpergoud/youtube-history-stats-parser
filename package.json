@@ -1,0 +1,33 @@
+{
+  "name": "youtube-history-stats",
+  "version": "0.0.1",
+  "description": "Get the full programm of the cinema Le Vincennes",
+  "devDependencies": {
+    "@types/node": "~16.11.6",
+    "@typescript-eslint/eslint-plugin": "~5.7.0",
+    "@typescript-eslint/parser": "~5.7.0",
+    "eslint": "~8.4.1",
+    "eslint-config-prettier": "~8.3.0",
+    "prettier": "~2.5.1",
+    "tsutils": "~3.21.0",
+    "typescript": "~4.5.3"
+  },
+  "scripts": {
+    "start": "node --experimental-modules --es-module-specifier-resolution=node build/src/main.js",
+    "prebuild": "npm run lint",
+    "build": "tsc -p tsconfig.release.json",
+    "build:watch": "tsc -w -p tsconfig.release.json",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "author": "Florent Pergoud",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@notionhq/client": "^0.4.11",
+    "@types/jsdom": "^16.2.14",
+    "dayjs": "^1.10.7",
+    "dotenv": "^10.0.0",
+    "jsdom": "^19.0.0",
+    "tslib": "~2.3.1"
+  },
+  "type": "module"
+}
