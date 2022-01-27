@@ -1,17 +1,16 @@
 import { getData } from './getData';
+import { logValues } from './logValues';
 
 const displayData = async () => {
   try {
-    const parsedData = await getData();
-    const sortedData = parsedData.sort(
-      (a, b) => b.watchDates.length - a.watchDates.length,
-    );
-    console.log('sortedData', JSON.stringify(sortedData, null, 2));
-    console.log('sortedData.length', sortedData.length);
-    console.log(
-      'Visionning number',
-      sortedData.reduce((acc, cur) => acc + cur.watchDates.length, 0),
-    );
+    const { viewingHistory, mostRecentDataDate, oldestDataDate } =
+      await getData();
+
+    logValues(viewingHistory);
+
+    console.log('most recent data date', mostRecentDataDate);
+    console.log('oldest data date', oldestDataDate);
+
     process.exit();
   } catch (e) {
     console.log(e);

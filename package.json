@@ -24,7 +24,6 @@
   "dependencies": {
     "@notionhq/client": "^0.4.11",
     "@types/jsdom": "^16.2.14",
-    "dayjs": "^1.10.7",
     "dotenv": "^10.0.0",
     "jsdom": "^19.0.0",
     "tslib": "~2.3.1"
