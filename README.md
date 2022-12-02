@@ -17,7 +17,7 @@ To get your history data :
 - Go to the bottom of the page and check `YouTube et YouTube Music ` then `Next step`
 - Select `Export one time` then `Create an export`
 - You will be informed by email when the export is ready.
-- You want to look for the `watch-history.html` in your export uncompressed folder
+- You want to look for the `Takeout/YouTube and YouTube Music/history/watch-history.html` in your export uncompressed folder
 
 ## Installation
 
