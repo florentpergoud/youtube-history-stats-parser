@@ -14,6 +14,8 @@
   },
   "scripts": {
     "start": "node --experimental-modules --es-module-specifier-resolution=node build/src/main.js",
+    "logCurrentYear": "node --experimental-modules --es-module-specifier-resolution=node build/src/log-current-year.js",
+    "displayCurrentYearRecap": "node --experimental-modules --es-module-specifier-resolution=node build/src/display-current-year-recap.js",
     "prebuild": "npm run lint",
     "build": "tsc -p tsconfig.release.json",
     "build:watch": "tsc -w -p tsconfig.release.json",
